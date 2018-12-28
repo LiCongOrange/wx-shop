@@ -1,0 +1,30 @@
+<!--pages/shoplist/shoplist.wxml-->
+<!--美食列表-->
+<view>
+<view class='search'>
+            <input type='text' placeholder='输入你想要的内容' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='query'></input>
+            <icon class="searchcion" size="15" type="search"></icon>
+        </view>
+<view class="slider">
+   <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+     <swiper-item wx:for="{{alist}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+     </swiper-item>
+   </swiper>
+ </view>
+<view class="btn-show-store-detail">本地商城推荐</view> 
+<view class="shop" wx:for="{{list}}" wx:key="index">
+  <image src="{{item.img_url}}" class="shop-img"></image>
+  <view class="shop-info">
+    <text class="shop-title ell">商品名称:{{item.name}}</text>
+    <text class="shop-tel">价格:{{item.tel}}</text>
+    <text class="shop-address">地址:{{item.addr}}</text>
+    <text class="shop-time">营业时间:{{item.mtime}}</text>
+  </view>
+  <view class="shop-star">
+       <view class="start-after">★★★★★</view>
+       <view class="start-before" 
+       style="width:{{item.star}}%">★★★★★</view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,92 @@
+/**index.wxss**/
+/**功能一:轮播图**/
+.slider,.slider swiper,.slider image{
+  height:390rpx;
+  width:100%;
+}
+/**功能二:九宫格**/
+.index-nav{
+   display: flex;
+   flex-wrap: wrap;
+}
+.nav-item{
+   width:33.33333%;
+   height:120rpx;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size:14px;
+   /*右侧添加边框,底部添加边框*/
+
+}
+.nav-item:nth-child(3n){
+  border-right:0 none;
+}
+.nav-item image{
+   width:60rpx;
+   height:60rpx;
+}
+/**功能三:分隔块**/
+.divider{
+  height:30rpx;
+  background-color:#f1f1f1; 
+}
+/**功能四:按钮**/
+.bar{
+  font-size:14px;
+  padding:10px;
+  border: 1px solid transparent;
+}
+.bara{
+  margin:8px;
+}
+.index-nav1{
+   display: flex;
+   flex-wrap: wrap;
+}
+.nav-item1{
+   width:50%;
+   height:250rpx;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size:14px;
+   /*右侧添加边框,底部添加边框*/
+   border:1rpx solid transparent;
+}
+.nav-item:nth-child(3n){
+  border-right:0 none;
+}
+.nav-item1 image{
+   width:100%;
+}
+/* 搜索框样式 */
+.search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width:100%;
+  height:70rpx;
+  background-color:whitesmoke;
+  border:1rpx solid whitesmoke;
+  border-radius: 5rpx;
+  }
+
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left:30rpx; 
+}
+
+
+.searchcion{
+  padding-right: 12px;
+}

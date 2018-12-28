@@ -1,0 +1,52 @@
+/* pages/profile/profile.wxss */
+/*头像*/
+.avatar{
+  background-color: #ff6600;
+  height:400rpx;
+  display: flex;          /*布局方式*/
+  justify-content: center;/*子元素居中*/
+  align-items: center;
+}
+.avatar image{
+   width:190rpx;
+   height:190rpx;
+   border-radius: 50%;
+   border:3px solid rgba(0,0,0,.3);
+}
+.dl{
+  display: inline-block;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background:#fff;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 15px;
+  text-align: center;
+}
+.aa{
+  background-color: #ff6600;
+  width:25%;
+  font-size:12px;
+  border:1px solid #ff6600;
+  text-align: center;
+}
+.bj{
+  background-color: #e74015e3;
+}

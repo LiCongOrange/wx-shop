@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="index-container">
+<view class='search'>
+            <input type='text' placeholder='输入你想要的内容' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='query'></input>
+            <icon class="searchcion" size="15" type="search"></icon>
+        </view>
+ <!--轮播图-->
+ <view class="slider">
+   <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+     <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+     </swiper-item>
+   </swiper>
+ </view>
+ <!--九宫格-->
+ <view class="index-nav">
+    <view class="nav-item" wx:for="{{navlist}}" wx:key="index">
+       <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap='handleJump' data-id="{{item.id}}"></image>
+       <text>{{item.title}}</text>
+    </view>
+ </view>
+ <view class="divider"></view>
+  <view class="bara">
+    <text class="bar">今日推荐</text>
+  </view>
+  <view class="index-nav1">
+    <view class="nav-item1" wx:for="{{navlista}}" wx:key="index">
+       <image src="{{item.img_url}}" lazy-load mode="aspectFit" bindtap='handleJump1' data-id="{{item.id}}"></image>
+       <text>{{item.title}}</text>
+    </view>
+ </view>
+</view>

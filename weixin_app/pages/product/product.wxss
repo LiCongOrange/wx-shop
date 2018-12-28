@@ -1,0 +1,15 @@
+/* pages/product/product.wxss */
+/*卡片*/
+.card{
+  background-color: #fff;  /*白色背景*/
+  border:1px solid #ddd;   /*灰色边框*/
+  border-radius: 20rpx;    /*圆角*/
+  margin:60rpx 20rpx;      
+  padding:20rpx;
+  display: flex;           /*布局*/
+  flex-direction: column;
+}
+.cell-item{
+  border-bottom: 1rpx solid #ddd;
+  padding:20rpx 30rpx;
+}
